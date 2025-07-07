@@ -36,25 +36,22 @@ ____________________________________________________________________
 
 - 1- List all products with list price greater than 1000
 - 2- Get customers from "CA" or "NY" states
-3- Retrieve all orders placed in 2023
-Show customers whose emails end with @gmail.com
-Show all inactive staff
-List top 5 most expensive products
-Show latest 10 orders sorted by date
-Retrieve the first 3 customers alphabetically by last name
-Find customers who did not provide a phone number
-Show all staff who have a manager assigned
-Count number of products in each category
-Count number of customers in each state
-Get average list price of products per brand
-Show number of orders per staff
-Find customers who made more than 2 orders
-Products priced between 500 and 1500
-Customers in cities starting with "S"
-Orders with order_status either 2 or 4
-Products from category_id IN (1, 2, 3)
-Staff working in store_id = 1 OR without phone number
-Submission Instructions#
-Submit a .sql file with all queries properly commented
-Use readable aliasing and formatting
-Test your queries before submission
+- 3- Retrieve all orders placed in 2023
+- 4-Show customers whose emails end with @gmail.com
+- 5-Show all inactive staff
+- 6-List top 5 most expensive products
+- 7-Show latest 10 orders sorted by date
+- 8-Retrieve the first 3 customers alphabetically by last name
+- 9-Find customers who did not provide a phone number
+- 10-Show all staff who have a manager assigned
+- 11-Count number of products in each category
+- 12-Count number of customers in each state
+- 13-Get average list price of products per brand
+- 14-Show number of orders per staff
+- 15-Find customers who made more than 2 orders
+- 16-Products priced between 500 and 1500
+- 17-Customers in cities starting with "S"
+- 18-Orders with order_status either 2 or 4
+- 19-Products from category_id IN (1, 2, 3)
+- 20-Staff working in store_id = 1 OR without phone number
+
