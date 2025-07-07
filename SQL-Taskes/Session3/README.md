@@ -14,7 +14,7 @@
 ### Constraints:#
 Including the following for each table:
 
-- - Required constraints:
+* Required constraints:
 
 - PRIMARY KEY constraints on all tables
 - FOREIGN KEY constraints with appropriate ON DELETE and ON UPDATE actions
