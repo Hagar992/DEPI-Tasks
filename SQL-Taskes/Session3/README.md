@@ -35,8 +35,8 @@ ____________________________________________________________________
 ### Use the provided StoreDB database to perform the following queries:
 
 1- List all products with list price greater than 1000
-Get customers from "CA" or "NY" states
-Retrieve all orders placed in 2023
+2 - Get customers from "CA" or "NY" states
+3- Retrieve all orders placed in 2023
 Show customers whose emails end with @gmail.com
 Show all inactive staff
 List top 5 most expensive products
