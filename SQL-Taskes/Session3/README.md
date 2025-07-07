@@ -14,7 +14,7 @@
 ### Constraints:#
 Including the following for each table:
 
-* Required constraints:
+ #### Required constraints:
 
 - PRIMARY KEY constraints on all tables
 - FOREIGN KEY constraints with appropriate ON DELETE and ON UPDATE actions
@@ -24,7 +24,7 @@ Including the following for each table:
 - CHECK constraints for data validation (e.g. gender must be 'M' or 'F')
 - Additional requirements:
 
-- - Demonstrate ALTER TABLE usage by:
+#### Demonstrate ALTER TABLE usage by:
 - Adding a new column
 - Adding a FOREIGN KEY constraint
 - Modifying a column's data type
@@ -34,7 +34,7 @@ ____________________________________________________________________
 ### Task 2 – SQL Queries on StoreDB#
 ### Use the provided StoreDB database to perform the following queries:
 
-1-List all products with list price greater than 1000
+1- List all products with list price greater than 1000
 Get customers from "CA" or "NY" states
 Retrieve all orders placed in 2023
 Show customers whose emails end with @gmail.com
