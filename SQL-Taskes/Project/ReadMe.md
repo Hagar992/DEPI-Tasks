@@ -1,4 +1,4 @@
-# Project Title: Examination System Database.#
+# Project Title: Examination System Database.
 
 ## System requirements:
 
