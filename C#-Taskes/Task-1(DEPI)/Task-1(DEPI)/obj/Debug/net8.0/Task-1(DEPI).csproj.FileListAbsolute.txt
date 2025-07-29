@@ -1,0 +1,15 @@
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\Task-1(DEPI)\Task-1(DEPI)\bin\Debug\net8.0\Task-1(DEPI).exe
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\Task-1(DEPI)\Task-1(DEPI)\bin\Debug\net8.0\Task-1(DEPI).deps.json
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\Task-1(DEPI)\Task-1(DEPI)\bin\Debug\net8.0\Task-1(DEPI).runtimeconfig.json
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\Task-1(DEPI)\Task-1(DEPI)\bin\Debug\net8.0\Task-1(DEPI).dll
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\Task-1(DEPI)\Task-1(DEPI)\bin\Debug\net8.0\Task-1(DEPI).pdb
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\Task-1(DEPI)\Task-1(DEPI)\obj\Debug\net8.0\Task-1(DEPI).GeneratedMSBuildEditorConfig.editorconfig
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\Task-1(DEPI)\Task-1(DEPI)\obj\Debug\net8.0\Task-1(DEPI).AssemblyInfoInputs.cache
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\Task-1(DEPI)\Task-1(DEPI)\obj\Debug\net8.0\Task-1(DEPI).AssemblyInfo.cs
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\Task-1(DEPI)\Task-1(DEPI)\obj\Debug\net8.0\Task-1(DEPI).csproj.CoreCompileInputs.cache
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\Task-1(DEPI)\Task-1(DEPI)\obj\Debug\net8.0\Task-1(DEPI).sourcelink.json
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\Task-1(DEPI)\Task-1(DEPI)\obj\Debug\net8.0\Task-1(DEPI).dll
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\Task-1(DEPI)\Task-1(DEPI)\obj\Debug\net8.0\refint\Task-1(DEPI).dll
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\Task-1(DEPI)\Task-1(DEPI)\obj\Debug\net8.0\Task-1(DEPI).pdb
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\Task-1(DEPI)\Task-1(DEPI)\obj\Debug\net8.0\Task-1(DEPI).genruntimeconfig.cache
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\Task-1(DEPI)\Task-1(DEPI)\obj\Debug\net8.0\ref\Task-1(DEPI).dll

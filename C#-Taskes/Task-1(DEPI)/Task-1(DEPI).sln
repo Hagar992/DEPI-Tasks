@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36221.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task-1(DEPI)", "Task-1(DEPI)\Task-1(DEPI).csproj", "{56D8B880-61E5-410D-B1E1-F435EB866C74}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56D8B880-61E5-410D-B1E1-F435EB866C74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56D8B880-61E5-410D-B1E1-F435EB866C74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56D8B880-61E5-410D-B1E1-F435EB866C74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56D8B880-61E5-410D-B1E1-F435EB866C74}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C75113A-5B74-4C9A-81B5-212A3A11EDB3}
+	EndGlobalSection
+EndGlobal
