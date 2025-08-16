@@ -1,0 +1,15 @@
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\ConsoleApp1BankApp(Assignment-1)\ConsoleApp1BankApp(Assignment-1)\bin\Debug\net8.0\ConsoleApp1BankApp(Assignment-1).exe
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\ConsoleApp1BankApp(Assignment-1)\ConsoleApp1BankApp(Assignment-1)\bin\Debug\net8.0\ConsoleApp1BankApp(Assignment-1).deps.json
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\ConsoleApp1BankApp(Assignment-1)\ConsoleApp1BankApp(Assignment-1)\bin\Debug\net8.0\ConsoleApp1BankApp(Assignment-1).runtimeconfig.json
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\ConsoleApp1BankApp(Assignment-1)\ConsoleApp1BankApp(Assignment-1)\bin\Debug\net8.0\ConsoleApp1BankApp(Assignment-1).dll
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\ConsoleApp1BankApp(Assignment-1)\ConsoleApp1BankApp(Assignment-1)\bin\Debug\net8.0\ConsoleApp1BankApp(Assignment-1).pdb
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\ConsoleApp1BankApp(Assignment-1)\ConsoleApp1BankApp(Assignment-1)\obj\Debug\net8.0\ConsoleApp1BankApp(Assignment-1).GeneratedMSBuildEditorConfig.editorconfig
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\ConsoleApp1BankApp(Assignment-1)\ConsoleApp1BankApp(Assignment-1)\obj\Debug\net8.0\ConsoleApp1BankApp(Assignment-1).AssemblyInfoInputs.cache
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\ConsoleApp1BankApp(Assignment-1)\ConsoleApp1BankApp(Assignment-1)\obj\Debug\net8.0\ConsoleApp1BankApp(Assignment-1).AssemblyInfo.cs
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\ConsoleApp1BankApp(Assignment-1)\ConsoleApp1BankApp(Assignment-1)\obj\Debug\net8.0\ConsoleApp1BankApp(Assignment-1).csproj.CoreCompileInputs.cache
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\ConsoleApp1BankApp(Assignment-1)\ConsoleApp1BankApp(Assignment-1)\obj\Debug\net8.0\ConsoleApp1BankApp(Assignment-1).sourcelink.json
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\ConsoleApp1BankApp(Assignment-1)\ConsoleApp1BankApp(Assignment-1)\obj\Debug\net8.0\ConsoleApp1BankApp(Assignment-1).dll
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\ConsoleApp1BankApp(Assignment-1)\ConsoleApp1BankApp(Assignment-1)\obj\Debug\net8.0\refint\ConsoleApp1BankApp(Assignment-1).dll
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\ConsoleApp1BankApp(Assignment-1)\ConsoleApp1BankApp(Assignment-1)\obj\Debug\net8.0\ConsoleApp1BankApp(Assignment-1).pdb
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\ConsoleApp1BankApp(Assignment-1)\ConsoleApp1BankApp(Assignment-1)\obj\Debug\net8.0\ConsoleApp1BankApp(Assignment-1).genruntimeconfig.cache
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\ConsoleApp1BankApp(Assignment-1)\ConsoleApp1BankApp(Assignment-1)\obj\Debug\net8.0\ref\ConsoleApp1BankApp(Assignment-1).dll

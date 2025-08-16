@@ -1,0 +1,15 @@
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\BankApp_Assignment_2_\BankApp_Assignment_2_\bin\Debug\net8.0\BankApp_Assignment_2_.exe
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\BankApp_Assignment_2_\BankApp_Assignment_2_\bin\Debug\net8.0\BankApp_Assignment_2_.deps.json
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\BankApp_Assignment_2_\BankApp_Assignment_2_\bin\Debug\net8.0\BankApp_Assignment_2_.runtimeconfig.json
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\BankApp_Assignment_2_\BankApp_Assignment_2_\bin\Debug\net8.0\BankApp_Assignment_2_.dll
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\BankApp_Assignment_2_\BankApp_Assignment_2_\bin\Debug\net8.0\BankApp_Assignment_2_.pdb
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\BankApp_Assignment_2_\BankApp_Assignment_2_\obj\Debug\net8.0\BankApp_Assignment_2_.GeneratedMSBuildEditorConfig.editorconfig
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\BankApp_Assignment_2_\BankApp_Assignment_2_\obj\Debug\net8.0\BankApp_Assignment_2_.AssemblyInfoInputs.cache
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\BankApp_Assignment_2_\BankApp_Assignment_2_\obj\Debug\net8.0\BankApp_Assignment_2_.AssemblyInfo.cs
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\BankApp_Assignment_2_\BankApp_Assignment_2_\obj\Debug\net8.0\BankApp_Assignment_2_.csproj.CoreCompileInputs.cache
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\BankApp_Assignment_2_\BankApp_Assignment_2_\obj\Debug\net8.0\BankApp_Assignment_2_.sourcelink.json
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\BankApp_Assignment_2_\BankApp_Assignment_2_\obj\Debug\net8.0\BankApp_Assignment_2_.dll
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\BankApp_Assignment_2_\BankApp_Assignment_2_\obj\Debug\net8.0\refint\BankApp_Assignment_2_.dll
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\BankApp_Assignment_2_\BankApp_Assignment_2_\obj\Debug\net8.0\BankApp_Assignment_2_.pdb
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\BankApp_Assignment_2_\BankApp_Assignment_2_\obj\Debug\net8.0\BankApp_Assignment_2_.genruntimeconfig.cache
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\BankApp_Assignment_2_\BankApp_Assignment_2_\obj\Debug\net8.0\ref\BankApp_Assignment_2_.dll

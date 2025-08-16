@@ -1,0 +1,15 @@
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\BankApp_Assignment_3_\BankApp_Assignment_3_\bin\Debug\net8.0\BankApp_Assignment_3_.exe
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\BankApp_Assignment_3_\BankApp_Assignment_3_\bin\Debug\net8.0\BankApp_Assignment_3_.deps.json
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\BankApp_Assignment_3_\BankApp_Assignment_3_\bin\Debug\net8.0\BankApp_Assignment_3_.runtimeconfig.json
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\BankApp_Assignment_3_\BankApp_Assignment_3_\bin\Debug\net8.0\BankApp_Assignment_3_.dll
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\BankApp_Assignment_3_\BankApp_Assignment_3_\bin\Debug\net8.0\BankApp_Assignment_3_.pdb
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\BankApp_Assignment_3_\BankApp_Assignment_3_\obj\Debug\net8.0\BankApp_Assignment_3_.GeneratedMSBuildEditorConfig.editorconfig
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\BankApp_Assignment_3_\BankApp_Assignment_3_\obj\Debug\net8.0\BankApp_Assignment_3_.AssemblyInfoInputs.cache
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\BankApp_Assignment_3_\BankApp_Assignment_3_\obj\Debug\net8.0\BankApp_Assignment_3_.AssemblyInfo.cs
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\BankApp_Assignment_3_\BankApp_Assignment_3_\obj\Debug\net8.0\BankApp_Assignment_3_.csproj.CoreCompileInputs.cache
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\BankApp_Assignment_3_\BankApp_Assignment_3_\obj\Debug\net8.0\BankApp_Assignment_3_.sourcelink.json
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\BankApp_Assignment_3_\BankApp_Assignment_3_\obj\Debug\net8.0\BankApp_Assignment_3_.dll
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\BankApp_Assignment_3_\BankApp_Assignment_3_\obj\Debug\net8.0\refint\BankApp_Assignment_3_.dll
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\BankApp_Assignment_3_\BankApp_Assignment_3_\obj\Debug\net8.0\BankApp_Assignment_3_.pdb
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\BankApp_Assignment_3_\BankApp_Assignment_3_\obj\Debug\net8.0\BankApp_Assignment_3_.genruntimeconfig.cache
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\BankApp_Assignment_3_\BankApp_Assignment_3_\obj\Debug\net8.0\ref\BankApp_Assignment_3_.dll

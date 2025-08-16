@@ -1,0 +1,171 @@
+﻿
+using System;
+using System.Linq;
+
+namespace BankApp_Assignment_1_
+{
+    internal class BankAccount
+    {
+        // ========== Fields ==========
+        public const string BankCode = "BNK001";          
+        public readonly DateTime CreatedDate;             
+
+        private int _accountNumber;                       
+        private string _fullName = "";
+        private string _nationalID = "";
+        private string _phoneNumber = "";
+        private string? _address;
+        private decimal _balance;
+
+        // ========== Properties  ==========
+        public int AccountNumber => _accountNumber;       
+
+        public string FullName
+        {
+            get => _fullName;
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                    throw new ArgumentException("Full name must not be empty.");
+                _fullName = value.Trim();
+            }
+        }
+
+        public string NationalID
+        {
+            get => _nationalID;
+            set
+            {
+                var v = value?.Trim();
+                if (!IsValidNationalID(v))
+                    throw new ArgumentException("National ID must be exactly 14 digits.");
+                _nationalID = v!;
+            }
+        }
+
+        public string PhoneNumber
+        {
+            get => _phoneNumber;
+            set
+            {
+                var v = value?.Trim();
+                if (!IsValidPhoneNumber(v))
+                    throw new ArgumentException("Phone number must start with 01 and be 11 digits.");
+                _phoneNumber = v!;
+            }
+        }
+
+        public string? Address
+        {
+            get => _address;
+            set => _address = string.IsNullOrWhiteSpace(value) ? null : value.Trim();
+        }
+
+        public decimal Balance
+        {
+            get => _balance;
+            set
+            {
+                if (value < 0)
+                    throw new ArgumentOutOfRangeException(nameof(Balance), "Balance must be >= 0.");
+                _balance = value;
+            }
+        }
+
+        // ========== Constructors ==========
+       
+        public BankAccount()
+        {
+            CreatedDate = DateTime.Now;
+            _accountNumber = 0;                
+            FullName = "Unknown";
+            NationalID = "00000000000000";      
+            PhoneNumber = "01000000000";       
+            Address = null;
+            Balance = 0m;
+        }
+
+        public BankAccount(string fullName, string nationalID, string phoneNumber, string? address, decimal balance)
+        {
+            CreatedDate = DateTime.Now;
+            _accountNumber = 0;
+            FullName = fullName;
+            NationalID = nationalID;
+            PhoneNumber = phoneNumber;
+            Address = address;
+            Balance = balance;
+        }
+
+        public BankAccount(string fullName, string nationalID, string phoneNumber, string? address)
+            : this(fullName, nationalID, phoneNumber, address, 0m)
+        {
+        }
+
+        public void SetAccountNumber(int accountNumber)
+        {
+            if (accountNumber <= 0)
+                throw new ArgumentOutOfRangeException(nameof(accountNumber), "Account number must be positive.");
+            if (_accountNumber != 0)
+                throw new InvalidOperationException("Account number has already been set.");
+            _accountNumber = accountNumber;
+        }
+
+        // ========== Methods ==========
+        public void ShowAccountDetails()
+        {
+            Console.WriteLine("=== Account Details ===");
+            Console.WriteLine($"Bank Code     : {BankCode}");
+            Console.WriteLine($"Created Date  : {CreatedDate:yyyy-MM-dd HH:mm:ss}");
+            Console.WriteLine($"Account No.   : {(AccountNumber == 0 ? "Not set" : AccountNumber)}");
+            Console.WriteLine($"Full Name     : {FullName}");
+            Console.WriteLine($"National ID   : {NationalID}");
+            Console.WriteLine($"Phone Number  : {PhoneNumber}");
+            Console.WriteLine($"Address       : {Address ?? "N/A"}");
+            Console.WriteLine($"Balance       : {Balance:C}");
+            Console.WriteLine();
+        }
+
+        public static bool IsValidNationalID(string? nationalID)
+        {
+            if (string.IsNullOrWhiteSpace(nationalID)) return false;
+            var s = nationalID.Trim();
+            return s.Length == 14 && s.All(char.IsDigit);
+        }
+
+        public static bool IsValidPhoneNumber(string? phone)
+        {
+            if (string.IsNullOrWhiteSpace(phone)) return false;
+            var s = phone.Trim();
+            return s.Length == 11 && s.StartsWith("01") && s.All(char.IsDigit);
+        }
+    }
+
+    internal class Program
+    {
+        private static void Main()
+        {
+         
+            var acc1 = new BankAccount(
+                fullName: "Shams A",
+                nationalID: "29809090000000",
+                phoneNumber: "01123456789",
+                address: "Cairo, EG",
+                balance: 1500m
+            );
+            acc1.SetAccountNumber(1001);
+            acc1.ShowAccountDetails();
+
+           
+            var acc2 = new BankAccount(
+                fullName: "Hagar Atia",
+                nationalID: "30101010101010",
+                phoneNumber: "01055555555",
+                address: "Giza, EG"
+            );
+            acc2.SetAccountNumber(1002);
+            acc2.ShowAccountDetails();
+
+            //Console.ReadKey();
+        }
+    }
+}

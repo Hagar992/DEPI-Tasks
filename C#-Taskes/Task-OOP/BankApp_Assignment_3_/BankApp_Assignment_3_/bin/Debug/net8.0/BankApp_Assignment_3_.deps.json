@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "BankApp_Assignment_3_/1.0.0": {
+        "runtime": {
+          "BankApp_Assignment_3_.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BankApp_Assignment_3_/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
