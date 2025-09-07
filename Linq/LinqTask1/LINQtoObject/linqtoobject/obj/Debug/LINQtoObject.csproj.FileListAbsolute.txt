@@ -1,0 +1,38 @@
+D:\My Work\Instructor\Intake30\Focus\LINQ\Course Details\Day 1\For Staff\LINQtoObject\LINQtoObject\obj\Debug\ResolveAssemblyReference.cache
+D:\My Work\Instructor\Intake30\Focus\LINQ\Course Details\Day 1\For Staff\LINQtoObject\LINQtoObject\bin\Debug\LINQtoObject.exe
+D:\My Work\Instructor\Intake30\Focus\LINQ\Course Details\Day 1\For Staff\LINQtoObject\LINQtoObject\bin\Debug\LINQtoObject.pdb
+D:\My Work\Instructor\Intake30\Focus\LINQ\Course Details\Day 1\For Staff\LINQtoObject\LINQtoObject\obj\Debug\LINQtoObject.exe
+D:\My Work\Instructor\Intake30\Focus\LINQ\Course Details\Day 1\For Staff\LINQtoObject\LINQtoObject\obj\Debug\LINQtoObject.pdb
+C:\Users\Basma\Desktop\LINQ -Day 1\For Staff\LINQtoObject\LINQtoObject\obj\Debug\LINQtoObject.exe
+C:\Users\Basma\Desktop\LINQ -Day 1\For Staff\LINQtoObject\LINQtoObject\obj\Debug\LINQtoObject.pdb
+C:\Users\Basma\Desktop\LINQ -Day 1\For Students\Assignments\LINQtoObject\LINQtoObject\obj\Debug\LINQtoObject.exe
+C:\Users\Basma\Desktop\LINQ -Day 1\For Students\Assignments\LINQtoObject\LINQtoObject\obj\Debug\LINQtoObject.pdb
+E:\Intake30\Courses\FocusCourses\LINQ_Course\LINQ -Day 1\For Students\Assignments\LINQtoObject\LINQtoObject\obj\Debug\LINQtoObject.exe
+E:\Intake30\Courses\FocusCourses\LINQ_Course\LINQ -Day 1\For Students\Assignments\LINQtoObject\LINQtoObject\obj\Debug\LINQtoObject.pdb
+C:\Users\Basma\Desktop\LINQ_2012\LINQ_Day3\For Students\Assignments\LINQtoObject\LINQtoObject\obj\Debug\LINQtoObject.exe
+C:\Users\Basma\Desktop\LINQ_2012\LINQ_Day3\For Students\Assignments\LINQtoObject\LINQtoObject\obj\Debug\LINQtoObject.pdb
+E:\Intake 32\Cloud Developer-SD\Focus_Courses\LINQ_2012\LINQ_Day3\For Students\Assignments\LINQtoObject\LINQtoObject\obj\Debug\LINQtoObject.exe
+E:\Intake 32\Cloud Developer-SD\Focus_Courses\LINQ_2012\LINQ_Day3\For Students\Assignments\LINQtoObject\LINQtoObject\obj\Debug\LINQtoObject.pdb
+C:\Users\Basma\Desktop\LINQ_Day3_Lab\LINQtoObject\LINQtoObject\obj\Debug\LINQtoObject.exe
+C:\Users\Basma\Desktop\LINQ_Day3_Lab\LINQtoObject\LINQtoObject\obj\Debug\LINQtoObject.pdb
+F:\Intakes\Focus\Linq\Intake33\LINQ\Day 3\LINQ_Day3_Lab\LINQtoObject\LINQtoObject\obj\Debug\LINQtoObject.exe
+F:\Intakes\Focus\Linq\Intake33\LINQ\Day 3\LINQ_Day3_Lab\LINQtoObject\LINQtoObject\obj\Debug\LINQtoObject.pdb
+F:\study\1 nourhan\ITI .Net\Linq & EF ahmed mamdoh\LINQ\linq\LINQtoObject\Assignment\LINQtoObject\LINQtoObject\bin\Debug\LINQtoObject.exe
+F:\study\1 nourhan\ITI .Net\Linq & EF ahmed mamdoh\LINQ\linq\LINQtoObject\Assignment\LINQtoObject\LINQtoObject\bin\Debug\LINQtoObject.pdb
+F:\study\1 nourhan\ITI .Net\Linq & EF ahmed mamdoh\LINQ\linq\LINQtoObject\Assignment\LINQtoObject\LINQtoObject\obj\Debug\LINQtoObject.csproj.AssemblyReference.cache
+F:\study\1 nourhan\ITI .Net\Linq & EF ahmed mamdoh\LINQ\linq\LINQtoObject\Assignment\LINQtoObject\LINQtoObject\obj\Debug\LINQtoObject.csproj.CoreCompileInputs.cache
+F:\study\1 nourhan\ITI .Net\Linq & EF ahmed mamdoh\LINQ\linq\LINQtoObject\Assignment\LINQtoObject\LINQtoObject\obj\Debug\LINQtoObject.exe
+F:\study\1 nourhan\ITI .Net\Linq & EF ahmed mamdoh\LINQ\linq\LINQtoObject\Assignment\LINQtoObject\LINQtoObject\obj\Debug\LINQtoObject.pdb
+D:\DEPI\Assignment\LINQtoObject\LINQtoObject\bin\Debug\LINQtoObject.exe
+D:\DEPI\Assignment\LINQtoObject\LINQtoObject\bin\Debug\LINQtoObject.pdb
+D:\DEPI\Assignment\LINQtoObject\LINQtoObject\obj\Debug\LINQtoObject.csproj.AssemblyReference.cache
+D:\DEPI\Assignment\LINQtoObject\LINQtoObject\obj\Debug\LINQtoObject.csproj.CoreCompileInputs.cache
+D:\DEPI\Assignment\LINQtoObject\LINQtoObject\obj\Debug\LINQtoObject.exe
+D:\DEPI\Assignment\LINQtoObject\LINQtoObject\obj\Debug\LINQtoObject.pdb
+C:\Users\Shams\Downloads\DEPI-main\DEPI-main\LinqTask1\LINQtoObject\LINQtoObject\bin\Debug\LINQtoObject.exe.config
+C:\Users\Shams\Downloads\DEPI-main\DEPI-main\LinqTask1\LINQtoObject\LINQtoObject\bin\Debug\LINQtoObject.exe
+C:\Users\Shams\Downloads\DEPI-main\DEPI-main\LinqTask1\LINQtoObject\LINQtoObject\bin\Debug\LINQtoObject.pdb
+C:\Users\Shams\Downloads\DEPI-main\DEPI-main\LinqTask1\LINQtoObject\LINQtoObject\obj\Debug\LINQtoObject.csproj.AssemblyReference.cache
+C:\Users\Shams\Downloads\DEPI-main\DEPI-main\LinqTask1\LINQtoObject\LINQtoObject\obj\Debug\LINQtoObject.csproj.CoreCompileInputs.cache
+C:\Users\Shams\Downloads\DEPI-main\DEPI-main\LinqTask1\LINQtoObject\LINQtoObject\obj\Debug\LINQtoObject.exe
+C:\Users\Shams\Downloads\DEPI-main\DEPI-main\LinqTask1\LINQtoObject\LINQtoObject\obj\Debug\LINQtoObject.pdb

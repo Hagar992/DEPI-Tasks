@@ -1,0 +1,15 @@
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\calc extension method\calc extension method\bin\Debug\net8.0\calc extension method.exe
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\calc extension method\calc extension method\bin\Debug\net8.0\calc extension method.deps.json
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\calc extension method\calc extension method\bin\Debug\net8.0\calc extension method.runtimeconfig.json
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\calc extension method\calc extension method\bin\Debug\net8.0\calc extension method.dll
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\calc extension method\calc extension method\bin\Debug\net8.0\calc extension method.pdb
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\calc extension method\calc extension method\obj\Debug\net8.0\calc extension method.GeneratedMSBuildEditorConfig.editorconfig
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\calc extension method\calc extension method\obj\Debug\net8.0\calc extension method.AssemblyInfoInputs.cache
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\calc extension method\calc extension method\obj\Debug\net8.0\calc extension method.AssemblyInfo.cs
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\calc extension method\calc extension method\obj\Debug\net8.0\calc extension method.csproj.CoreCompileInputs.cache
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\calc extension method\calc extension method\obj\Debug\net8.0\calc extension method.sourcelink.json
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\calc extension method\calc extension method\obj\Debug\net8.0\calc extension method.dll
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\calc extension method\calc extension method\obj\Debug\net8.0\refint\calc extension method.dll
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\calc extension method\calc extension method\obj\Debug\net8.0\calc extension method.pdb
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\calc extension method\calc extension method\obj\Debug\net8.0\calc extension method.genruntimeconfig.cache
+E:\رواد مصر الرقميه\Tec\SQL\C#-Taskes\calc extension method\calc extension method\obj\Debug\net8.0\ref\calc extension method.dll
