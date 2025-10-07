@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Validation & API</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    form { width: 300px; margin: auto; }
+    input { display: block; margin-bottom: 10px; padding: 8px; width: 100%; }
+    .error { color: red; font-size: 14px; }
+    .success { color: green; font-size: 14px; }
+    table { width: 80%; margin: 20px auto; border-collapse: collapse; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+    th { background: #f4f4f4; }
+  </style>
+</head>
+<body>
+  <h2>Register</h2>
+  <form id="registerForm">
+    <input type="text" id="name" placeholder="Enter Name">
+    <span class="error" id="name-error"></span>
+
+    <input type="email" id="email" placeholder="Enter Email">
+    <span class="error" id="email-error"></span>
+
+    <input type="password" id="password" placeholder="Enter Password">
+    <span class="error" id="password-error"></span>
+
+    <input type="password" id="confirmPassword" placeholder="Confirm Password">
+    <span class="error" id="confirmPassword-error"></span>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="result"></p>
+
+  <h2>Users List</h2>
+  <table id="usersTable">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    const form = document.getElementById("registerForm");
+    const tableBody = document.querySelector("#usersTable tbody");
+    const apiUrl = "https://680a5916d5075a76d987b60f.mockapi.io/api/v1/users";
+
+    function clearErrors() {
+      document.querySelectorAll(".error").forEach(e => e.innerText = "");
+    }
+
+    async function loadUsers() {
+      tableBody.innerHTML = "";
+      try {
+        const res = await fetch(apiUrl);
+        const users = await res.json();
+        users.forEach(user => {
+          tableBody.innerHTML += `
+            <tr>
+              <td>${user.id}</td>
+              <td>${user.name}</td>
+              <td>${user.email}</td>
+            </tr>
+          `;
+        });
+      } catch (err) {
+        tableBody.innerHTML = `<tr><td colspan="3">Error loading users ❌</td></tr>`;
+      }
+    }
+
+    form.onsubmit = async function (e) {
+      e.preventDefault();
+      clearErrors();
+      let isValid = true;
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirmPassword").value;
+
+      // Validation
+      if (name === "") {
+        document.getElementById("name-error").innerText = "Name is required";
+        isValid = false;
+      } else if (!/^[a-zA-Z ]{3,20}$/.test(name)) {
+        document.getElementById("name-error").innerText = "Invalid name";
+        isValid = false;
+      }
+
+      if (email === "") {
+        document.getElementById("email-error").innerText = "Email is required";
+        isValid = false;
+      } else if (!/^[a-zA-Z0-9._]+@[a-z]+\.[a-z]{2,}$/.test(email)) {
+        document.getElementById("email-error").innerText = "Invalid email";
+        isValid = false;
+      }
+
+      if (password === "") {
+        document.getElementById("password-error").innerText = "Password is required";
+        isValid = false;
+      } else if (!/^(?=.*[A-Z])(?=.*\d).{6,}$/.test(password)) {
+        document.getElementById("password-error").innerText =
+          "At least 6 chars, 1 uppercase & 1 number";
+        isValid = false;
+      }
+
+      if (confirmPassword !== password) {
+        document.getElementById("confirmPassword-error").innerText = "Passwords do not match";
+        isValid = false;
+      }
+
+      if (isValid) {
+        try {
+          const response = await fetch(apiUrl, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ name, email, password })
+          });
+
+          if (response.ok) {
+            document.getElementById("result").innerHTML =
+              "<span class='success'>Registration successful ✅</span>";
+            loadUsers(); // reload table
+            form.reset(); // clear form
+          } else {
+            document.getElementById("result").innerHTML =
+              "<span class='error'>API Error ❌</span>";
+          }
+        } catch (err) {
+          document.getElementById("result").innerHTML =
+            "<span class='error'>Network Error ❌</span>";
+        }
+      }
+    };
+
+    // Load users when page starts
+    loadUsers();
+  </script>
+</body>
+</html>

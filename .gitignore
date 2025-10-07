@@ -1,0 +1,9 @@
+# Visual Studio cache and build folders
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.vsidx
+*.db
+*.log

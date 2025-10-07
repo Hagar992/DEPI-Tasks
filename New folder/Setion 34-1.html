@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task Example</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    #container {
+      width: 80%;
+      margin: auto;
+      border: 2px solid black;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    #welcomeText {
+      margin-bottom: 20px;
+    }
+    #userImage {
+      max-width: 200px;
+      display: none;
+      margin-bottom: 20px;
+    }
+    .controls {
+      margin-top: 20px;
+    }
+    button {
+      margin: 0 5px;
+      padding: 5px 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div>
+    <input type="text" id="nameInput" placeholder="Enter name">
+    <input type="text" id="imageInput" placeholder="Enter image filename (e.g. user.jpg)">
+    <select id="fontSelect">
+      <option value="Arial">Arial</option>
+      <option value="Verdana">Verdana</option>
+      <option value="Georgia">Georgia</option>
+      <option value="Tahoma">Tahoma</option>
+    </select>
+    <button id="btnClick">Click</button>
+  </div>
+
+  <div id="container">
+    <div id="welcomeText">Welcome</div>
+    <img id="userImage" src="" alt="User Image">
+    <div class="controls">
+      <button id="btnPlus">+</button>
+      <button id="btnMinus">−</button>
+    </div>
+  </div>
+
+  <script>
+    const nameInput = document.getElementById('nameInput');
+    const imageInput = document.getElementById('imageInput');
+    const fontSelect = document.getElementById('fontSelect');
+    const btnClick = document.getElementById('btnClick');
+    const welcomeText = document.getElementById('welcomeText');
+    const userImage = document.getElementById('userImage');
+    const btnPlus = document.getElementById('btnPlus');
+    const btnMinus = document.getElementById('btnMinus');
+    const container = document.getElementById('container');
+
+    let currentFontSize = 16; 
+
+   
+    function isValidName(name) {
+      return /^[A-Za-z]{3,}$/.test(name.trim());
+    }
+
+    btnClick.addEventListener('click', function() {
+      const name = nameInput.value;
+      const imgName = imageInput.value;
+      if (isValidName(name)) {
+        welcomeText.innerText = `Welcome ${name}`;
+      
+        if (/\.(jpe?g|png|gif)$/i.test(imgName.trim())) {
+          userImage.src = imgName.trim();
+          userImage.style.display = 'block';
+        } else {
+          userImage.style.display = 'none';
+        }
+       
+        welcomeText.style.fontFamily = fontSelect.value;
+        userImage.style.fontFamily = fontSelect.value; 
+      } else {
+        welcomeText.innerText = "Invalid name";
+        userImage.style.display = 'none';
+      }
+    });
+
+    btnPlus.addEventListener('click', function() {
+      if (currentFontSize < 40) {
+        currentFontSize += 2;
+        if (currentFontSize > 40) currentFontSize = 40;
+        
+        const maxBasedOnWidth = window.innerWidth / 10; 
+        if (currentFontSize > maxBasedOnWidth) {
+          currentFontSize = Math.floor(maxBasedOnWidth);
+        }
+        welcomeText.style.fontSize = currentFontSize + 'px';
+      }
+    });
+
+    btnMinus.addEventListener('click', function() {
+      if (currentFontSize > 10) {
+        currentFontSize -= 2;
+        if (currentFontSize < 10) currentFontSize = 10;
+        welcomeText.style.fontSize = currentFontSize + 'px';
+      }
+    });
+
+  </script>
+
+</body>
+</html>
