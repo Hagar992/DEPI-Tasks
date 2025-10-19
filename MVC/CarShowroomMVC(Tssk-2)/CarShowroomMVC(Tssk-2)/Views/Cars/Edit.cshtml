@@ -4,43 +4,317 @@
     ViewData["Title"] = "Edit Car";
 }
 
-<div class="container mt-5">
-    <h2 class="fw-bold mb-4">Edit Car Information</h2>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <form asp-action="Edit" method="post">
-        <input type="hidden" asp-for="Id" />
+    <style>
+        .edit-container {
+            max-width: 700px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 50px rgba(0,0,0,0.1);
+            border: 1px solid #e9ecef;
+        }
 
-        <div class="mb-3">
-            <label class="form-label">Car Name</label>
-            <input asp-for="Name" class="form-control" />
+        .edit-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #3498db;
+            text-align: center;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+
+            .edit-title::after {
+                content: '';
+                position: absolute;
+                bottom: -10px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 60px;
+                height: 3px;
+                background: linear-gradient(45deg, #3498db, #2980b9);
+                border-radius: 2px;
+            }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+            .form-label i {
+                color: #3498db;
+                font-size: 0.9rem;
+            }
+
+        .form-control {
+            border: 2px solid #e9ecef;
+            border-radius: 12px;
+            padding: 0.75rem 1rem;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+            .form-control:focus {
+                border-color: #3498db;
+                box-shadow: 0 0 0 0.25rem rgba(52, 152, 219, 0.25);
+                outline: none;
+            }
+
+            .form-control::placeholder {
+                color: #95a5a6;
+            }
+
+        .file-input-wrapper {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+            .file-input-wrapper input[type="file"] {
+                position: absolute;
+                left: 0;
+                top: 0;
+                opacity: 0;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+            }
+
+        .file-input-label {
+            display: block;
+            padding: 0.75rem 1rem;
+            background: #f8f9fa;
+            border: 2px dashed #3498db;
+            border-radius: 12px;
+            text-align: center;
+            color: #3498db;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+            .file-input-label:hover {
+                background: #e3f2fd;
+                border-color: #2980b9;
+            }
+
+        .current-image-preview {
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        .current-image {
+            max-height: 150px;
+            width: auto;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .btn-save {
+            background: linear-gradient(45deg, #3498db, #2980b9);
+            border: none;
+            padding: 0.75rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+        }
+
+            .btn-save:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+                background: linear-gradient(45deg, #2980b9, #1f618d);
+            }
+
+        .btn-cancel {
+            background: linear-gradient(45deg, #7f8c8d, #95a5a6);
+            border: none;
+            padding: 0.75rem 2rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(127, 140, 141, 0.3);
+        }
+
+            .btn-cancel:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 6px 20px rgba(127, 140, 141, 0.4);
+                background: linear-gradient(45deg, #6c7a89, #7f8c8d);
+            }
+
+        .form-actions {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #ecf0f1;
+        }
+
+        .input-group-text {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-right: none;
+            border-radius: 12px 0 0 12px;
+        }
+
+        .input-group > .form-control {
+            border-radius: 0 12px 12px 0;
+            border-left: none;
+        }
+
+        @@media (max-width: 768px) {
+            .edit-container
+
+        {
+            margin: 1rem;
+            padding: 1.5rem;
+        }
+
+        .edit-title {
+            font-size: 1.8rem;
+        }
+
+        .form-actions {
+            flex-direction: column;
+        }
+
+        .btn-save, .btn-cancel {
+            width: 100%;
+        }
+
+        .current-image {
+            max-height: 120px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        }
+    </style>
+
+
+   
+    <div class="container">
+        <div class="edit-container">
+            <h2 class="edit-title">
+                <i class="fas fa-edit me-2"></i>Edit Car Information
+            </h2>
+
+            <form asp-action="Edit" method="post" enctype="multipart/form-data">
+                @Html.AntiForgeryToken()
+                <input type="hidden" asp-for="Id" />
+
+                <div class="form-group">
+                    <label for="Name" class="form-label">
+                        <i class="fas fa-tag"></i> Car Name
+                    </label>
+                    <input asp-for="Name" class="form-control" placeholder="Enter car name" required />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="Brand" class="form-label">
+                        <i class="fas fa-copyright"></i> Brand
+                    </label>
+                    <input asp-for="Brand" class="form-control" placeholder="Enter car brand" required />
+                    <span asp-validation-for="Brand" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="Year" class="form-label">
+                        <i class="fas fa-calendar-alt"></i> Year
+                    </label>
+                    <input asp-for="Year" class="form-control" type="number" min="1900" max="2024" required />
+                    <span asp-validation-for="Year" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">
+                        <i class="fas fa-dollar-sign"></i> Price
+                    </label>
+                    <div class="input-group">
+                        <span class="input-group-text">$</span>
+                        <input asp-for="Price" class="form-control" type="number" min="0" step="0.01" required />
+                    </div>
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">
+                        <i class="fas fa-link"></i> Current Image URL
+                    </label>
+                    <input asp-for="ImageUrl" class="form-control" placeholder="https://example.com/car.jpg" />
+                    @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                    {
+                        <div class="current-image-preview mt-2">
+                            <img src="@Model.ImageUrl" alt="Current Car Image" class="current-image" id="currentImagePreview">
+                        </div>
+                    }
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">
+                        <i class="fas fa-cloud-upload-alt"></i> Change Image (Optional)
+                    </label>
+                    <div class="file-input-wrapper">
+                        <label class="file-input-label" id="fileInputLabel">
+                            <i class="fas fa-file-image me-2"></i>Choose a new image
+                        </label>
+                        <input asp-for="ImageFile" type="file" accept="image/*" />
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-save">
+                        <i class="fas fa-save me-2"></i>Save Changes
+                    </button>
+                    <a href="@Url.Action("Index", "Cars")" class="btn btn-cancel">
+                        <i class="fas fa-times me-2"></i>Cancel
+                    </a>
+                </div>
+            </form>
         </div>
+    </div>
 
-        <div class="mb-3">
-            <label class="form-label">Brand</label>
-            <input asp-for="Brand" class="form-control" />
-        </div>
+    
 
-        <div class="mb-3">
-            <label class="form-label">Year</label>
-            <input asp-for="Year" class="form-control" type="number" />
-        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Update image preview when new file is selected
+        document.querySelector('input[name="ImageFile"]').addEventListener('change', function(e) {
+            const fileName = e.target.files[0]?.name || 'Choose a new image';
+            document.getElementById('fileInputLabel').innerHTML = `<i class="fas fa-file-image me-2"></i>${fileName}`;
 
-        <div class="mb-3">
-            <label class="form-label">Price ($)</label>
-            <input asp-for="Price" class="form-control" type="number" />
-        </div>
+            // Update image preview with selected file
+            if (e.target.files && e.target.files[0]) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('currentImagePreview').src = e.target.result;
+                }
+                reader.readAsDataURL(e.target.files[0]);
+            }
+        });
 
-        <div class="mb-3">
-            <label class="form-label">Image URL</label>
-            <input asp-for="ImageUrl" class="form-control" />
-        </div>
-        <div class="mb-3">
-            <label class="form-label">Change Image (optional)</label>
-            <input asp-for="ImageFile" class="form-control" type="file" />
-        </div>
+        // Update image preview when URL changes
+        document.getElementById('ImageUrl').addEventListener('input', function() {
+            const url = this.value.trim();
+            if (url && (url.startsWith('http://') || url.startsWith('https://'))) {
+                document.getElementById('currentImagePreview').src = url;
+            }
+        });
+    </script>
 
-
-        <button type="submit" class="btn btn-primary px-4">Save Changes</button>
-        <a href="/Cars/Index" class="btn btn-secondary ms-2">Cancel</a>
-    </form>
-</div>

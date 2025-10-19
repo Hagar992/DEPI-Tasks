@@ -1,117 +1,115 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using CarShowroomMVC.Models;
+using CarShowroomMVC.Repositories;
 
 namespace CarShowroomMVC.Controllers
 {
     public class CarsController : Controller
     {
-        private readonly IWebHostEnvironment _environment;
-        private static List<Car> _cars = new(); // مؤقتًا بدل قاعدة بيانات
+        private readonly ICarRepository _carRepository;
+        private readonly IWebHostEnvironment _hostEnvironment;
 
-        public CarsController(IWebHostEnvironment environment)
+        public CarsController(ICarRepository carRepository, IWebHostEnvironment hostEnvironment)
         {
-            _environment = environment;
+            _carRepository = carRepository;
+            _hostEnvironment = hostEnvironment;
         }
 
-        // GET: /Cars
         public IActionResult Index()
         {
-            return View(_cars);
+            var cars = _carRepository.GetAll();
+            return View(cars);
         }
 
-        // GET: /Cars/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
+        public IActionResult Create() => View();
 
-        // POST: /Cars/Create
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Create(Car car)
         {
-            if (car.ImageFile != null)
+            if (ModelState.IsValid)
             {
-                string wwwRootPath = _environment.WebRootPath;
-                string fileName = Path.GetFileNameWithoutExtension(car.ImageFile.FileName);
-                string extension = Path.GetExtension(car.ImageFile.FileName);
-                string fullName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
-                string path = Path.Combine(wwwRootPath + "/images/", fullName);
-
-                using (var fileStream = new FileStream(path, FileMode.Create))
+                // ✅ حفظ الصورة في wwwroot/images
+                if (car.ImageFile != null)
                 {
-                    car.ImageFile.CopyTo(fileStream);
+                    string wwwRootPath = _hostEnvironment.WebRootPath;
+                    string fileName = Path.GetFileNameWithoutExtension(car.ImageFile.FileName);
+                    string extension = Path.GetExtension(car.ImageFile.FileName);
+                    string filePath = Path.Combine(wwwRootPath, "images", fileName + extension);
+
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    {
+                        car.ImageFile.CopyTo(fileStream);
+                    }
+
+                    // نحفظ مسار الصورة
+                    car.ImageUrl = "/images/" + fileName + extension;
                 }
 
-                car.ImageUrl = "/images/" + fullName;
+                // ✅ إضافة السيارة لقاعدة البيانات
+                _carRepository.Add(car);
+                return RedirectToAction(nameof(Index));
             }
-
-            _cars.Add(car);
-            return RedirectToAction(nameof(Index));
+            return View(car);
         }
 
-        // GET: /Cars/Edit/5
         public IActionResult Edit(int id)
         {
-            var car = _cars.FirstOrDefault(x => x.Id == id);
+            var car = _carRepository.GetById(id);
             if (car == null) return NotFound();
             return View(car);
         }
 
-        // POST: /Cars/Edit
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Edit(Car car)
         {
-            var existingCar = _cars.FirstOrDefault(x => x.Id == car.Id);
-            if (existingCar == null) return NotFound();
-
-            if (car.ImageFile != null)
+            if (ModelState.IsValid)
             {
-                string wwwRootPath = _environment.WebRootPath;
-                string fileName = Path.GetFileNameWithoutExtension(car.ImageFile.FileName);
-                string extension = Path.GetExtension(car.ImageFile.FileName);
-                string fullName = fileName + DateTime.Now.ToString("yymmssfff") + extension;
-                string path = Path.Combine(wwwRootPath + "/images/", fullName);
+                var existingCar = _carRepository.GetById(car.Id);
+                if (existingCar == null)
+                    return NotFound();
 
-                using (var fileStream = new FileStream(path, FileMode.Create))
+                
+                existingCar.Name = car.Name;
+                existingCar.Brand = car.Brand;
+                existingCar.Year = car.Year;
+                existingCar.Price = car.Price;
+
+                
+                if (!string.IsNullOrEmpty(car.ImageUrl))
                 {
-                    car.ImageFile.CopyTo(fileStream);
+                    existingCar.ImageUrl = car.ImageUrl;
                 }
 
-                existingCar.ImageUrl = "/images/" + fullName;
+               
+                if (car.ImageFile != null)
+                {
+                    string wwwRootPath = _hostEnvironment.WebRootPath;
+                    string fileName = Path.GetFileNameWithoutExtension(car.ImageFile.FileName);
+                    string extension = Path.GetExtension(car.ImageFile.FileName);
+                    string filePath = Path.Combine(wwwRootPath, "images", fileName + extension);
+
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
+                    {
+                        car.ImageFile.CopyTo(fileStream);
+                    }
+
+                    existingCar.ImageUrl = "/images/" + fileName + extension;
+                }
+
+               
+                _carRepository.Update(existingCar);
+                return RedirectToAction(nameof(Index));
             }
-
-            existingCar.Name = car.Name;
-            existingCar.Brand = car.Brand;
-            existingCar.Price = car.Price;
-            existingCar.Year = car.Year;
-
-            return RedirectToAction(nameof(Index));
+            return View(car);
         }
 
-        // GET: /Cars/Delete/5
+
         public IActionResult Delete(int id)
         {
-            var car = _cars.FirstOrDefault(x => x.Id == id);
-            if (car == null) return NotFound();
-            return View(car);
-        }
-
-        [HttpPost, ActionName("DeleteConfirmed")]
-        public IActionResult DeleteConfirmed(int id)
-        {
-            var car = _cars.FirstOrDefault(x => x.Id == id);
-            if (car != null)
-                _cars.Remove(car);
-
+            _carRepository.Delete(id);
             return RedirectToAction(nameof(Index));
-        }
-
-        // GET: /Cars/Details/5
-        public IActionResult Details(int id)
-        {
-            var car = _cars.FirstOrDefault(x => x.Id == id);
-            if (car == null) return NotFound();
-            return View(car);
         }
     }
 }

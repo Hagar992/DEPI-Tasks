@@ -1,9 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Microsoft.AspNetCore.Http;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace CarShowroomMVC.Models
-{
+namespace CarShowroomMVC.Models {
     public class Car
     {
         public int Id { get; set; }
@@ -22,7 +20,9 @@ namespace CarShowroomMVC.Models
 
         public string ImageUrl { get; set; }
 
-        [NotMapped] 
-        public IFormFile ImageFile { get; set; }
+        public string? ImageLink { get; set; }
+
+        [NotMapped]
+        public IFormFile? ImageFile { get; set; }
     }
 }
